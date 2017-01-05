@@ -13,13 +13,13 @@ atom_style	atomic
 
 read_data	singlewater.data
 
-pair_style 	vashishta
+pair_style vashishta
 pair_coeff	* *  ../../potentialparameters/H2O.vashishta O H
-mass            1 15.9994
-mass            2 1.00794
+mass 1 15.9994
+mass 2 1.00794
 
 velocity all create 300.0 86151 mom yes
 fix nve all nve
-timestep	0.0005
+timestep 0.0005
 
 run 1000
