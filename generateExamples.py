@@ -29,12 +29,15 @@ deposit_atom={"objectId": "deposit_atom", "inputScript": "in.deposit.atom", "tag
 deposit_molecule={"objectId": "deposit_molecule", "inputScript": "in.deposit.molecule", "tags": ["lammps", "lj", "deposit", "molecule"], "folder": "examples/lammps/deposit_molecule", "name": "Deposit molecules", "description": "Deposition of molecules onto a 3d substrate."}
 micelle={"objectId": "micelle", "inputScript": "in.micelle", "tags": ["lammps", "soft"], "folder": "examples/lammps/micelle", "name": "Micelle", "description": "Self-assembly of small lipid-like molecules into 2d bilayers."}
 obstacle={"objectId": "obstacle", "inputScript": "in.obstacle", "tags": ["lammps", "lj", "2d"], "folder": "examples/lammps/obstacle", "name": "2d obstacle", "description": "Flow around two voids in a 2d channel."}
-peptide={"objectId": "peptide", "inputScript": "in.peptide", "tags": ["lammps", "molecule", "water"], "folder": "examples/lammps/peptide", "name": "Peptide solvation", "description": "Dynamics of a small solvated peptide chain (5-mer)."}
+peptide={"objectId": "peptide", "inputScript": "in.peptide", "tags": ["lammps", "molecule", "water", "solvation"], "folder": "examples/lammps/peptide", "name": "Peptide solvation", "description": "Dynamics of a small solvated peptide chain (5-mer)."}
 pour_2d={"objectId": "pour_2d", "inputScript": "in.pour.2d", "tags": ["lammps", "granular", "2d"], "folder": "examples/lammps/pour_2d", "name": "2d pour.", "description": "Dynamics of a small solvated peptide chain (5-mer)."}
 pour_2d_molecule={"objectId": "pour_2d_molecule", "inputScript": "in.pour.2d.molecule", "tags": ["lammps", "granular", "2d", "molecule"], "folder": "examples/lammps/pour_2d_molecule", "name": "2d molecule pour", "description": "Pouring of granular molecules into a 2d box, then chute flow."}
 pour_3d={"objectId": "pour_3d", "inputScript": "in.pour", "tags": ["lammps", "granular"], "folder": "examples/lammps/pour_3d", "name": "3d pour", "description": "Pouring of granular particles into a 3d box, then chute flow."}
 shear={"objectId": "shear", "inputScript": "in.shear", "tags": ["lammps", "shear"], "folder": "examples/lammps/shear", "name": "Shear", "description": "sideways shear applied to 2d solid."}
 shear_void={"objectId": "shear_void", "inputScript": "in.shear.void", "tags": ["lammps", "shear"], "folder": "examples/lammps/shear_void", "name": "Shear with void", "description": "Sideways shear applied to 2d solid with a void."}
+# moltemplate
+abstract_translocation={"objectId": "abstract_translocation", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "solvation", "polymer"], "folder": "examples/lammps/abstract_translocation", "name": "Polymer through hole", "description": "This example contains a (crude and somewhat simple) example of the translocation of a (rather short) polymer through a hole in a wall, surrounded by an explicit LJ solvent."}
+
 
 examples = [
     singlewater,

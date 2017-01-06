@@ -1,3 +1,6 @@
+#/camera position 37 05 30
+#/camera viewcenter 18 18 0
+
 # THIS EXAMPLE HAS NOT BEEN RIGOROUSLY TESTED.
 # (This simulation may fail.
 #  However the "run.in.nvt" example in this directory should work.)
