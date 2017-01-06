@@ -36,8 +36,18 @@ pour_3d={"objectId": "pour_3d", "inputScript": "in.pour", "tags": ["lammps", "gr
 shear={"objectId": "shear", "inputScript": "in.shear", "tags": ["lammps", "shear"], "folder": "examples/lammps/shear", "name": "Shear", "description": "sideways shear applied to 2d solid."}
 shear_void={"objectId": "shear_void", "inputScript": "in.shear.void", "tags": ["lammps", "shear"], "folder": "examples/lammps/shear_void", "name": "Shear with void", "description": "Sideways shear applied to 2d solid with a void."}
 # moltemplate
-abstract_translocation={"objectId": "abstract_translocation", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "solvation", "polymer"], "folder": "examples/lammps/abstract_translocation", "name": "Polymer through hole", "description": "This example contains a (crude and somewhat simple) example of the translocation of a (rather short) polymer through a hole in a wall, surrounded by an explicit LJ solvent."}
-
+abstract_translocation={"objectId": "abstract_translocation", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "solvation", "polymer"], "folder": "examples/moltemplate/abstract_translocation", "name": "Polymer through hole", "description": "This example contains a (crude and somewhat simple) example of the translocation of a (rather short) polymer through a hole in a wall, surrounded by an explicit LJ solvent."}
+alkane_chain_single={"objectId": "alkane_chain_single", "inputScript": "run.in.nvt", "tags": ["moltemplate", "molecule", "alkane", "polymer", "hydrocarbon"], "folder": "examples/moltemplate/alkane_chain_single", "name": "Alkane chain", "description": "This example is a simple simulation of a long alkane chain, in a vacuum at room temperature using the OPLSAA force field."}
+benzene={"objectId": "benzene", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "benzene", "hydrocarbon"], "folder": "examples/moltemplate/benzene", "name": "Benzene", "description": "This example shows how to build a box of benzene molecules using the AMBER/GAFF force-field."}
+chromosome={"objectId": "benzene", "inputScript": "run.in.stage1", "tags": ["moltemplate", "molecule"], "folder": "examples/moltemplate/chromosome_metaphase_Naumova2013", "name": "Metaphase chromatin", "description": "This is an implementation of the \"two-stage\" model used by Maxim Imakaev in the Naumova et Al 2013 Science paper on metaphase chromatin."}
+ethylene_benzene={"objectId": "ethylene_benzene", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "hydrocarbon", "benzene"], "folder": "examples/moltemplate/ethylene+benzene", "name": "Ethylene and benzene", "description": "This example shows how to simulate a mixture of ethylene and benzene using the AMBER/GAFF force field."}
+frustrated={"objectId": "frustrated", "inputScript": "run_short_sim.in.nvt", "tags": ["moltemplate", "molecule", "protein", "polymer"], "folder": "examples/moltemplate/frustrated", "name": "Protein folding", "description": "During this short simulation the protein evolves from an unfolded initial conformation to a misfolded conformation. It can take a very long time."}
+ice_crystal={"objectId": "ice_crystal", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "water", "ice"], "folder": "examples/moltemplate/ice_crystal", "name": "Ice crystal", "description": "A simulation of an ice crystal using SPCE water and the shake algorithm."}
+methane={"objectId": "methane", "inputScript": "run.in.npt", "tags": ["moltemplate", "molecule", "methane", "hydrocarbon"], "folder": "examples/moltemplate/methane", "name": "Methane", "description": "This example demonstrates how to build a simulation containing a box of methane."}
+nanotube_water={"objectId": "nanotube_water", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "carbon"], "folder": "examples/moltemplate/nanotube+water", "name": "Water in nanotube", "description": "This is a small version of a carbon-nanotube, water capillary system."}
+water_methane={"objectId": "water_methane", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "SPCE", "methane", "hydrocarbon"], "folder": "examples/moltemplate/waterSPCE+methane", "name": "Methane in water", "description": "This example contains a mixture of SPCE water and methane. The methane molecules use OPLSAA force-field."}
+water_nacl={"objectId": "water_nacl", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "SPCE", "nacl"], "folder": "examples/moltemplate/waterSPCE+Na+Cl", "name": "Salt water", "description": "This example contains a mixture of SPCE water and salt (NaCl)."}
+water_isobutane={"objectId": "water_isobutane", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "TIP3P", "hydrocarbon"], "folder": "examples/moltemplate/waterTIP3P+isobutane", "name": "TIP3P water and isobutane", "description": "The simulation consists of a mixture of isobutane and water. Over time (less than 1 ns), the two molecules phase-separate."}
 
 examples = [
     singlewater,
@@ -59,7 +69,19 @@ examples = [
     pour_2d_molecule,
     pour_3d,
     shear,
-    shear_void
+    shear_void,
+    abstract_translocation,
+    alkane_chain_single,
+    benzene,
+    chromosome,
+    ethylene_benzene,
+    frustrated,
+    ice_crystal,
+    methane,
+    nanotube_water,
+    water_methane,
+    water_nacl,
+    water_isobutane
 ]
 
 examplesDictList = []
