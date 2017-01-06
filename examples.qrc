@@ -23,6 +23,37 @@
         <file>examples/lammps/flow_pois/flow_pois.png</file>
         <file>examples/lammps/friction/friction.in</file>
         <file>examples/lammps/friction/friction.png</file>
+        <file>examples/lammps/cmap/charmm22.cmap</file>
+        <file>examples/lammps/cmap/cmap.png</file>
+        <file>examples/lammps/cmap/gagg.data</file>
+        <file>examples/lammps/cmap/in.cmap</file>
+        <file>examples/lammps/deposit_atom/deposit.png</file>
+        <file>examples/lammps/deposit_atom/in.deposit.atom</file>
+        <file>examples/lammps/deposit_molecule/deposit_molecule.png</file>
+        <file>examples/lammps/deposit_molecule/in.deposit.molecule</file>
+        <file>examples/lammps/deposit_molecule/molecule.dimer</file>
+        <file>examples/lammps/micelle/data.micelle</file>
+        <file>examples/lammps/micelle/def.micelle</file>
+        <file>examples/lammps/micelle/in.micelle</file>
+        <file>examples/lammps/micelle/micelle.png</file>
+        <file>examples/lammps/obstacle/in.obstacle</file>
+        <file>examples/lammps/obstacle/obstacle.png</file>
+        <file>examples/lammps/peptide/data.peptide</file>
+        <file>examples/lammps/peptide/in.peptide</file>
+        <file>examples/lammps/peptide/peptide.png</file>
+        <file>examples/lammps/pour_2d/in.pour.2d</file>
+        <file>examples/lammps/pour_2d/pour_2d.png</file>
+        <file>examples/lammps/pour_2d_molecule/in.pour.2d.molecule</file>
+        <file>examples/lammps/pour_2d_molecule/molecule.vshape</file>
+        <file>examples/lammps/pour_2d_molecule/pour_2d_molecule.png</file>
+        <file>examples/lammps/pour_3d/in.pour</file>
+        <file>examples/lammps/pour_3d/pour.png</file>
+        <file>examples/lammps/shear/in.shear</file>
+        <file>examples/lammps/shear/Ni_u3.eam</file>
+        <file>examples/lammps/shear/shear.png</file>
+        <file>examples/lammps/shear_void/in.shear.void</file>
+        <file>examples/lammps/shear_void/Ni_u3.eam</file>
+        <file>examples/lammps/shear_void/shear_void.png</file>
         <file>examples.json</file>
     </qresource>
 </RCC>
