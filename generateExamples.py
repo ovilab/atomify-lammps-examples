@@ -31,12 +31,12 @@ for example in examples:
 stringified = json.dumps(examplesDictList)
 print stringified
 
-with open('examples.json', 'w') as outfile:
-    json.dump(examplesDictList, outfile)
+with open('examples/examples.json', 'w') as outfile:
+    json.dump({"results": examplesDictList}, outfile)
 
 with open('examples.qrc', 'w') as outfile:
     outfile.write("<RCC>\n    <qresource prefix=\"/\">\n")
     for file in fileList:
         outfile.write("        <file>%s</file>\n" % file)
-    outfile.write("        <file>examples.json</file>\n")
+    outfile.write("        <file>examples/examples.json</file>\n")
     outfile.write("    </qresource>\n</RCC>")
