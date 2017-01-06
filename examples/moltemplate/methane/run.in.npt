@@ -1,3 +1,5 @@
+#/camera position -60 150 150
+#/camera viewcenter 52 52 52
 # PREREQUISITES:
 #
 #     You must use moltemplate.sh to create 3 files:
@@ -11,7 +13,8 @@ include         "system.in.init"
 
 # ------------------------------- Atom Definition Section -------------------
 
-read_data       "system.data"
+#read_data       "system.data"
+read_data       "system_after_min.data"
 
 # ------------------------------- Settings Section --------------------------
 
@@ -30,13 +33,13 @@ include         "system.in.charges"
 #        It is incompatible with "minimize", so we disable it first.)
 #unfix         fShakeSPCE
 thermo        500
-minimize 1.0e-4 1.0e-6 100000 400000
+#minimize 1.0e-4 1.0e-6 100000 400000
 
 # Now read "system.in.settings" in order to enable fShakeSPCE again:
 #include       system.in.settings
 
 # Optional: write the coordinates after minimization
-write_data   system_after_min.data
+#write_data   system_after_min.data
 
 
 # -- simulation protocol --
