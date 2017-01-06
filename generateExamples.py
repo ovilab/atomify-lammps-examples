@@ -15,6 +15,7 @@ def findFiles(simulation):
                 simulation["thumbnails"].append(f)
             simulation["files"].append(f)
 
+diffusion={"objectId": "diffusion", "inputScript": "simple_diffusion.in", "tags": ["diffusion", "lj"], "folder": "examples/diffusion/diffusion", "name": "Diffusion", "description": "This example shows how you can measure the diffusion coefficient using the mean square displacement."}
 singlewater={"objectId": "singlewater", "inputScript": "singlewater.in", "tags": ["water", "manybody", "vashishta"], "folder": "examples/water/singlewater", "name": "Single water molecule", "description": "A single water molecule using the vashishta potential."}
 watervapor={"objectId": "watervapor", "inputScript": "watervapor.in", "tags": ["water", "manybody", "vashishta"], "folder": "examples/water/vapor", "name": "Water vapor", "description": "Low density water gas using the vashishta potential."}
 betacristobalite={"objectId": "betacristobalite", "inputScript": "betacristobalite.in", "tags": ["silica", "crystal", "manybody", "vashishta"], "folder": "examples/silica/betacristobalite", "name": "Silica beta cristobalite", "description": "Beta cristobalite crystal using the vashishta potential."}
@@ -50,6 +51,7 @@ water_nacl={"objectId": "water_nacl", "inputScript": "run.in.npt", "tags": ["mol
 water_isobutane={"objectId": "water_isobutane", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "TIP3P", "hydrocarbon"], "folder": "examples/moltemplate/waterTIP3P+isobutane", "name": "TIP3P water and isobutane", "description": "The simulation consists of a mixture of isobutane and water. Over time (less than 1 ns), the two molecules phase-separate."}
 
 examples = [
+    diffusion,
     singlewater,
     watervapor,
     betacristobalite,
