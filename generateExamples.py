@@ -18,12 +18,20 @@ examples = [
 ]
 
 examplesDictList = []
+fileList = []
 
 for example in examples:
     examplesDictList.append(example.__dict__)
+    fileList.extend(example.files)
 
 stringified = json.dumps(examplesDictList)
 print stringified
 
 with open('examples.json', 'w') as outfile:
     json.dump(examplesDictList, outfile)
+
+with open('examples.qrc', 'w') as outfile:
+    outfile.write("<RCC>\n    <qresource prefix=\"/\">\n")
+    for file in fileList:
+        outfile.write("        <file>images/%s</file>\n" % file)
+    outfile.write("    </qresource>\n</RCC>")

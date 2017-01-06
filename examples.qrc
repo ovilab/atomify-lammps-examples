@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/singlewater.data</file>
+        <file>images/singlewater.in</file>
+        <file>images/singlewater.data</file>
+        <file>images/singlewater.in</file>
+        <file>images/singlewater.data</file>
+        <file>images/singlewater.in</file>
+        <file>images/singlewater.data</file>
+        <file>images/singlewater.in</file>
+        <file>images/singlewater.data</file>
+        <file>images/singlewater.in</file>
+    </qresource>
+</RCC>
