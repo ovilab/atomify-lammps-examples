@@ -3,16 +3,16 @@ from os.path import isfile, join
 
 ignoreList = [".DS_Store", "log.lammps"]
 class Simulation:
-	def __init__(self, name, inputScript, folder, title, description, tags, thumbnails = None, files = None):
-		self.name = name
+        def __init__(self, objectId, inputScript, folder, name, description, tags, thumbnails = None, files = None):
+                self.objectId = objectId
 		self.inputScript = inputScript
 		self.folder = folder
 		self.files = files
-		self.title = title
+                self.name = name
 		self.description = description
 		self.tags = tags
 		self.thumbnails = thumbnails
-		print self.name
+                print self.objectId
 		print "Files now: ", self.files
 		if self.thumbnails is None:
 			self.thumbnails = []
