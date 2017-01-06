@@ -15,6 +15,14 @@
         <file>examples/silica/generate_nanoporous/betacristobalite.data</file>
         <file>examples/silica/generate_nanoporous/generate_nanoporous.in</file>
         <file>examples/silica/generate_nanoporous/generate_nanoporous.png</file>
+        <file>examples/lammps/crack/crack.in</file>
+        <file>examples/lammps/crack/crack.png</file>
+        <file>examples/lammps/flow_couette/flow_couette.in</file>
+        <file>examples/lammps/flow_couette/flow_couette.png</file>
+        <file>examples/lammps/flow_pois/flow_pois.in</file>
+        <file>examples/lammps/flow_pois/flow_pois.png</file>
+        <file>examples/lammps/friction/friction.in</file>
+        <file>examples/lammps/friction/friction.png</file>
         <file>examples.json</file>
     </qresource>
 </RCC>
