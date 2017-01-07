@@ -14,7 +14,7 @@ atom_style	molecular
 read_data multiplewater.data
 
 pair_style vashishta
-pair_coeff	* * ../../potentialparameters/H2O.vashishta O H
+pair_coeff	* * H2O.vashishta O H
 mass 1 15.9994
 mass 2 1.00794
 

@@ -13,7 +13,7 @@ read_data zeolite_zsm5.data
 replicate 3 3 3
 
 pair_style	vashishta
-pair_coeff	* * ../../potentialparameters/SiO2.vashishta Si O
+pair_coeff	* * SiO2.vashishta Si O
 mass 1 28.08
 mass 2 15.9994
 

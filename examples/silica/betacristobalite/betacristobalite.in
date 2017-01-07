@@ -16,7 +16,7 @@ read_data betacristobalite.data
 replicate 5 5 5
 
 pair_style vashishta/table 10000 0.5
-pair_coeff	* * ../../potentialparameters/SiO2.vashishta Si O
+pair_coeff	* * SiO2.vashishta Si O
 mass 1 28.08
 mass 2 15.9994
 
