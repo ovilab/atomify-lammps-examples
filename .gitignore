@@ -1,3 +1,6 @@
 .DS_Store
 log.lammps
 *.pyc
+examples.qrc
+examples/examples.json
+
