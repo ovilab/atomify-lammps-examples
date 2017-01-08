@@ -1,3 +1,6 @@
+#/camera position 0 93 32
+#/camera viewcenter 0 0 0
+
 # PREREQUISITES:
 #
 #     You must use moltemplate.sh to create 3 files:
