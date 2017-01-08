@@ -1,0 +1,25 @@
+#/camera position 195 160 155
+#/camera viewcenter 34 60 37
+
+#/atom 1 silicon
+#/atom 2 oxygen
+#/bond 1 2 2.6
+
+package omp 8
+suffix omp
+
+units		metal
+atom_style	atomic
+
+read_data ssz13Cube.data 
+replicate 5 5 5
+
+pair_style	vashishta/table 10000 0.3
+pair_coeff	* * SiO2.vashishta Si O
+mass            1 28.08
+mass            2 15.9994
+
+velocity all create 700 376847 loop geom
+
+fix nvt all nvt temp 700 700 0.2
+run 10000
