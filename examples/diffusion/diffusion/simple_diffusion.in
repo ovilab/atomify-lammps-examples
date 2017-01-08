@@ -21,12 +21,20 @@ region boxoutside block ${left} ${right} 0 $L 0 ${Lhalf} side out
 create_box 2 system
 create_atoms 1 region boxinside
 create_atoms 2 region boxoutside
-mass * 1.0
+mass 1 1.0
+mass 2 4.0
 
 velocity all create 3.44 87287 loop geom
 
 pair_style lj/cut 2.5
 pair_coeff * * 1.0 1.0 2.5
+group light type 1
+group heavy type 2
+
+compute msd_light light msd com yes
+compute msd_heavy heavy msd com yes
+variable diffusion_coeff_light equal c_msd_light[4]/6/(step*dt+1.0e-6)
+variable diffusion_coeff_heavy equal c_msd_heavy[4]/6/(step*dt+1.0e-6)
 
 fix 1 all nve
 run 10000

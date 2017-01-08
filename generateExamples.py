@@ -15,7 +15,7 @@ def findFiles(simulation):
                 simulation["thumbnails"].append(f)
             simulation["files"].append(f)
 
-diffusion={"objectId": "diffusion", "inputScript": "simple_diffusion.in", "tags": ["diffusion", "lj"], "folder": "examples/diffusion/diffusion", "name": "Diffusion", "description": "This example shows how you can measure the diffusion coefficient using the mean square displacement."}
+diffusion={"objectId": "diffusion", "inputScript": "simple_diffusion.in", "tags": ["diffusion", "lj"], "folder": "examples/diffusion/diffusion", "name": "Diffusion", "description": "This example shows how you can measure the diffusion coefficient using the mean square displacement. The white atoms have mass 1 while the red atoms have mass 4. This results in the red atoms having diffusion coefficient half the value of the white ones."}
 singlewater={"objectId": "singlewater", "inputScript": "singlewater.in", "tags": ["water", "manybody", "vashishta"], "folder": "examples/water/singlewater", "name": "Single water molecule", "description": "A single water molecule using the vashishta potential."}
 watervapor={"objectId": "watervapor", "inputScript": "vapor.in", "tags": ["water", "manybody", "vashishta"], "folder": "examples/water/vapor", "name": "Water vapor", "description": "Low density water gas using the vashishta potential."}
 betacristobalite={"objectId": "betacristobalite", "inputScript": "betacristobalite.in", "tags": ["silica", "crystal", "manybody", "vashishta"], "folder": "examples/silica/betacristobalite", "name": "Silica beta cristobalite", "description": "Beta cristobalite crystal using the vashishta potential."}
