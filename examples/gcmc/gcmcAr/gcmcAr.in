@@ -1,0 +1,61 @@
+# Set camera position
+#/camera position 50 400 65
+#/camera viewcenter 50 79 65
+
+# Chose initial atom types
+#/atom 1 argon
+#/atom 2 silicon
+#/atom 3 oxygen
+
+# Increase size on atoms to clearify system better
+#/atom 2 5
+#/atom 1 3
+package omp 8 
+suffix omp
+
+# 1 bar 
+variable p equal 1 
+
+# 11 nm
+variable H equal 11
+
+variable newsim equal 1
+
+variable Nsteps equal 10000
+variable Nevery equal 100
+variable T equal 87.3 #[K]
+
+units       real
+dimension   3
+boundary    p p p
+atom_style  atomic
+pair_style  lj/cut 10.00
+
+read_data confArH11.data
+
+group mobile type 1
+group zsm    type 2 3
+
+include chempotAr.set
+
+variable Nm equal  count(mobile)
+timestep 1.0
+
+fix FREESE zsm setforce 0.0 0.0 0.0
+compute Tm mobile temp
+
+neigh_modify exclude type 2 2
+neigh_modify exclude type 2 3
+neigh_modify exclude type 3 3
+
+label loopi
+variable i loop 1 1000000
+	fix MGCMC mobile gcmc 1 10 10 1 3456543 $T ${mu} 1.0 
+	thermo_style  custom step c_Tm v_Nm
+	thermo ${Nevery}
+	run  ${Nsteps}
+	unfix MGCMC
+	
+	write_data rstArH11.P$p.data
+next i
+jump gcmcAr.in loopi

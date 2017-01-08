@@ -1,0 +1,18 @@
+#CHEMICAL POTENTIAL CALCULATIONS
+variable mgas equal 39.948 #Ar
+variable Avogadro  equal 6.02214179e23
+variable Planck    equal 6.626068e-34
+variable Boltzmann equal 1.3806503e-23
+variable Pi        equal 4*atan(1)
+variable RHO equal 0.02476*exp(0.1433*$p)-0.02476*exp(-0.07897*$p)
+variable L equal exp(ln(${mgas}/${Avogadro}*1e-3/${RHO})/3)*1e9
+variable Lambda  equal ${Planck}/sqrt(2*${Pi}*${mgas}/${Avogadro}*1e-3*${Boltzmann}*${T})
+variable V equal   $L*$L*$L*1e-30 #[m3]
+variable mu0 equal ${Boltzmann}*${T}*ln(${Lambda}*${Lambda}*${Lambda}/$V)  #[J]
+variable mu  equal ${mu0}*1e-3*${Avogadro}/4.184  #[kcal/mol]
+variable mu0 delete
+variable V   delete
+variable Lambda delete
+variable Pi delete
+variable Boltzman delete
+variable Planck delete
