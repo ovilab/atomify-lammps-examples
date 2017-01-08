@@ -15,7 +15,8 @@
 #  ...and replace "lj/cut" in the "settings.in.init" and "settings.in.settings"
 #     files with "lj/cut/gpu"
 
-
+package omp 8 
+suffix omp
 # -- Init Section --
 
 include system.in.init
