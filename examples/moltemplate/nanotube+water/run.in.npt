@@ -11,7 +11,6 @@
 #/atom 1 carbon
 #/atom 2 oxygen
 #/atom 3 hydrogen
-#/bond 2 3 2.0
 #/bond 1 1 2.0
 
 # ----------------------------- Initialization Section --------------------
