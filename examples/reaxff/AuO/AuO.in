@@ -19,3 +19,4 @@ fix             2 all qeq/reax 1 0.0 10.0 1e-6 param.qeq
 fix             3 all temp/berendsen 500.0 500.0 100.0
 
 timestep	0.25
+run 10000

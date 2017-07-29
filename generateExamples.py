@@ -51,7 +51,15 @@ nanotube_water={"objectId": "nanotube_water", "inputScript": "run.in.npt", "tags
 water_methane={"objectId": "water_methane", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "SPCE", "methane", "hydrocarbon"], "folder": "examples/moltemplate/waterSPCE+methane", "name": "Methane in water", "description": "This example contains a mixture of SPCE water and methane. The methane molecules use OPLSAA force-field."}
 water_nacl={"objectId": "water_nacl", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "SPCE", "nacl"], "folder": "examples/moltemplate/waterSPCE+Na+Cl", "name": "Salt water", "description": "This example contains a mixture of SPCE water and salt (NaCl)."}
 water_isobutane={"objectId": "water_isobutane", "inputScript": "run.in.npt", "tags": ["moltemplate", "water", "TIP3P", "hydrocarbon"], "folder": "examples/moltemplate/waterTIP3P+isobutane", "name": "TIP3P water and isobutane", "description": "The simulation consists of a mixture of isobutane and water. Over time (less than 1 ns), the two molecules phase-separate."}
-
+# reaxff
+reax_ab={"objectId": "reax_ab", "inputScript": "AB.in", "tags": ["reaxff", "chemistry"], "folder": "examples/reaxff/AB", "name": "Ammonia-Borine (AB)", "description": "Combustion of Ammonia-Borine (AB) can be simulated with ReaxFF. Two AB molecules meet and a H<sub>2</sub> molecule is formed."}
+#reax_auo={"objectId": "reax_auo", "inputScript": "AuO.in", "tags": ["reaxff"], "folder": "examples/reaxff/AuO", "name": "Ammonia-Borine (AB)", "description": "Combustion of Ammonia-Borine (AB) can be simulated with ReaxFF. Two AB molecules meet and a H<sub>2</sub> molecule is formed."}
+reax_cho={"objectId": "reax_cho", "inputScript": "CHO.in", "tags": ["reaxff", "chemistry"], "folder": "examples/reaxff/CHO", "name": "Hydrocarbon oxcidation", "description": "Hydrocarbons (such as pentane) will at high temperatures react with oxygen and form water, CO, CO<sub>2</sub>, HO<sub>2</sub> and OH."}
+reax_feoh3={"objectId": "reax_feoh3", "inputScript": "FeOH3.in", "tags": ["reaxff", "chemistry"], "folder": "examples/reaxff/FeOH3", "name": "Iron(III) hydroxide", "description": "In this simulation, we see low density Iron(III) hydroxide (Fe(OH)<sub>3</sub>) at high temperature."}
+reax_rdx={"objectId": "reax_rdf", "inputScript": "RDX.in", "tags": ["reaxff", "chemistry", "explosives"], "folder": "examples/reaxff/RDX", "name": "RDX explosive", "description": "RDX is an organic compound normally used as an explosive, especially in world war II."}
+reax_ssz13={"objectId": "reax_ssz13", "inputScript": "ssz_13.in", "tags": ["reaxff", "nanoporous", "zeolite"], "folder": "examples/reaxff/ssz_13", "name": "Zeolite SSZ-13", "description": "This structure is a zeolite called SSZ-13 (or CHA) and has one of the silicon sites replaced with Aluminum and a hydrogen atom."}
+reax_voh={"objectId": "reax_voh", "inputScript": "VOH.in", "tags": ["reaxff", "chemistry"], "folder": "examples/reaxff/VOH", "name": "Vanadium Oxide", "description": "In this simulation, we see vanadium oxide being simulated using ReaxFF at high temperature."}
+reax_znoh2={"objectId": "reax_znoh2", "inputScript": "ZnOH2.in", "tags": ["reaxff", "chemistry"], "folder": "examples/reaxff/ZnOH2", "name": "Zn(OH)<sub>2</sub>", "description": "In this simulation, we see Zn(OH)<sub>2</sub> at high temperature."}
 examples = [
     diffusion,
     singlewater,
@@ -85,7 +93,14 @@ examples = [
     nanotube_water,
     water_methane,
     water_nacl,
-    water_isobutane
+    water_isobutane,
+    reax_ab,
+    reax_cho,
+    reax_feoh3,
+    reax_rdx,
+    reax_ssz13,
+    reax_voh,
+    reax_znoh2
 ]
 
 examplesDictList = []
