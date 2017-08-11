@@ -113,7 +113,7 @@ for example in examples:
         fileList.append(os.path.join(example["folder"], file))
 
 stringified=json.dumps(examplesDictList)
-print stringified
+print(stringified)
 
 with open('examples/examples.json', 'w') as outfile:
     json.dump({"results": examplesDictList}, outfile)
