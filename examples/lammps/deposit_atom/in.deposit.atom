@@ -18,7 +18,7 @@ pair_coeff	* * 1.0 1.0
 pair_coeff	1 2 1.0 1.0 5.0
 mass		* 1.0
 
-neigh_modify	delay 0
+neigh_modify every 1 delay 0 check yes
 
 group		addatoms type 2
 region          mobile block 0 5 0 5 2 INF

@@ -19,6 +19,7 @@ neigh_modify	delay 0
 
 pair_style      gran/hooke/history 2000.0 NULL 50.0 NULL 0.5 0
 pair_coeff	* *
+neigh_modify every 1 delay 0 check yes
 
 timestep	0.001
 

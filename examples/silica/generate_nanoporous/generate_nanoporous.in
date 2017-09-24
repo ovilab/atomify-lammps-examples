@@ -16,6 +16,8 @@ replicate 6 6 6
 
 pair_style vashishta/table 10000 0.5
 pair_coeff	* * SiO2.vashishta Si O
+neigh_modify every 1 delay 0 check yes
+
 mass 1 28.08
 mass 2 15.9994
 

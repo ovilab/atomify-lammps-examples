@@ -43,6 +43,7 @@ create_atoms 3 region hi-half-sphere
 
 pair_style lj/cut 2.5
 pair_coeff * * 1.0 1.0 2.5
+neigh_modify every 1 delay 0 check yes
 
 # define groups
 

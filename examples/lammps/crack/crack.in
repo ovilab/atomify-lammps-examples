@@ -25,6 +25,7 @@ mass 5 1.0
 
 pair_style lj/cut 2.5
 pair_coeff * * 1.0 1.0 2.5
+neigh_modify every 1 delay 0 check yes
 
 # define groups
 

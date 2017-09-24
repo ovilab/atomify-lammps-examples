@@ -19,3 +19,4 @@
   special_bonds   lj/coul  1 1 1
   boundary s s s      # <-- boundary conditions in x y z directions
   #boundary p p p      # <-- boundary conditions in x y z directions
+  neigh_modify every 1 delay 0 check yes

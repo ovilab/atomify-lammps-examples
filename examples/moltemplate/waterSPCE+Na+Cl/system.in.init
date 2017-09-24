@@ -14,3 +14,4 @@
   pair_style   hybrid lj/charmm/coul/long 9.0 10.0 10.0
   kspace_style pppm 0.0001
   pair_modify  mix arithmetic
+  neigh_modify every 1 delay 0 check yes

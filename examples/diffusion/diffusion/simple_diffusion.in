@@ -9,7 +9,7 @@
 #/atom 2 1.0 #ff0000
 
 variable L equal 20.0
-variable Lhalf equal 10.0
+variable Lhalf equal $(0.5*v_L)
 variable thickness equal 2.0
 
 units lj
@@ -40,12 +40,13 @@ velocity all create 3.00 1337 loop geom
 # Choose LJ with 2.5sigma cutoff
 pair_style lj/cut 2.5
 pair_coeff * * 1.0 1.0 2.5
+neigh_modify every 1 delay 0 check yes
 
 # Create two groups for computing diffusion coefficients
 group light type 1
 group heavy type 2
 
-# 
+# Measure mean square displacement and diffusion coefficient
 compute msd_light light msd com yes
 variable diffusion_coeff_light equal c_msd_light[4]/6/(step*dt+1.0e-6)
 

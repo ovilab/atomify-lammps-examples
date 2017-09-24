@@ -8,3 +8,4 @@
     pair_modify mix geometric
     special_bonds lj/coul 0.0 0.0 0.5
     kspace_style pppm 0.0001
+    neigh_modify every 1 delay 0 check yes

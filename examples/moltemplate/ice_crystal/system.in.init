@@ -7,3 +7,4 @@
     angle_style  hybrid harmonic
     kspace_style pppm 0.0001
     pair_modify  mix arithmetic
+    neigh_modify every 1 delay 0 check yes

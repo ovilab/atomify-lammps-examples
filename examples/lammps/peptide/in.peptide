@@ -25,6 +25,7 @@ angle_style     charmm
 dihedral_style  charmm
 improper_style  harmonic
 kspace_style	pppm 0.0001
+neigh_modify every 1 delay 0 check yes
 
 read_data	data.peptide
 
