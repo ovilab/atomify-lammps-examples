@@ -1,7 +1,7 @@
 # Atomify commands start with #/
 
 # Move camera to a nice position
-#/camera position 20 85 55
+#/camera position 20 -60 55
 #/camera viewcenter 20 20 10
 
 # Set atom size and color
